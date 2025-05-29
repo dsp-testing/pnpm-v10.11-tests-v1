@@ -9,6 +9,10 @@ updates:
       timezone: "Etc/UTC"
     open-pull-requests-limit: 20
     target-branch: main
+    ignore:
+      - dependency-name: "vue"
+        # Ignore patch updates for Node
+        # update-types: ["version-update:semver-patch"]
     groups:
       eslint:
         dependency-type: "development"
